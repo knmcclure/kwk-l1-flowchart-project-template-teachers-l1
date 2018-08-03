@@ -14,7 +14,7 @@ class ApplicationController < Sinatra::Base
     @quiz= Dog.new(params[:name], params[:q1].to_i, params[:q2].to_i, params[:q3].to_i)
     
     "Your breed is a #{@quiz.results}!"
-    
+    erb :layout 
   end
 
 end
